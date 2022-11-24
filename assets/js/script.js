@@ -5,7 +5,7 @@ var password = " ";
 console.log(characters);
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-var passwordChoice = window.prompt("Enter 12 characters, symbol, one uppercase, lowercase & numeric");
+var passwordChoice = window.confirm("Enter 12 characters, symbol, one uppercase, lowercase & numeric");
 // Write password to the #password input
 function writePassword() {
 
@@ -13,7 +13,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  var passwordChoice = window.confirm("Enter 12 characters, symbol, one uppercase, lowercase & numeric");
 }
 
 // Add event listener to generate button
