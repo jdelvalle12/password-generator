@@ -1,23 +1,23 @@
 // Assignment code here
+var generateBtn = document.querySelector("#generate");
+// Get references to the #generate element
+
 var characters = "abcdefghijklmnopqrstuvwxyz, ABCDEFGHIJKLMNOPQRSTUVWXYZ, 0123456789, @#$%^&*()";
 var passwordLength = 12;
 var password = " ";
 
 console.log(characters, passwordLength, password);
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
-var passwordText = document.querySelector("#password");
-
-var passwordChoice = window.alert("Enter at least 12 characters, a symbol, one uppercase, lowercase & number");
+var passwordChoice = window.alert("Enter at least 8-128 characters, a symbol, one uppercase, lowercase & number");
 
 var index = Math.floor(Math.random() * passwordLength);
 var computerChoice = characters[index];
 // Write password to the #password input
+
 function writePassword() {
 
-  document.querySelector("#password").textContent = password;
-  var password = generatePassword(generate, password);
+  var passwordText = document.querySelector("#password");
+  var password = generatePassword();
   
 
   passwordText.value = password;
