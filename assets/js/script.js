@@ -1,17 +1,6 @@
 // Assignment code here
 var generateBtn = document.querySelector("#generate");
-// Get references to the #generate element
 
-var characters = "abcdefghijklmnopqrstuvwxyz, ABCDEFGHIJKLMNOPQRSTUVWXYZ, 0123456789, @#$%^&*()";
-var passwordLength = 12;
-var password = " ";
-
-console.log(characters, passwordLength, password);
-
-var passwordChoice = window.alert("Enter at least 8-128 characters, a symbol, one uppercase, lowercase & number");
-
-var index = Math.floor(Math.random() * passwordLength);
-var computerChoice = characters[index];
 // Write password to the #password input
 
 function writePassword() {
@@ -24,30 +13,36 @@ function writePassword() {
   
 }
 
-var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
-var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var numbers = '0123456789';
-var symbols = '@#$%^&*()';
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
-function generatePassword () {
+//Functions to generate password;
+
+var lowerCase = ["a","b","c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var symbols = ["@", "#", "$", "%", "^", "&", "*", "(", ")"];
+var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var passwordLength = 128;
+var password = " ";
+
+function generatePassword() {
+
+  var generateBtn = parseInt(alert("Enter 8-128 characters, at least one symbol, one uppercase, one number, & lowercase"));
+  var passwordChoice = ['lowerCase', 'upperCase', 'numbers', 'symbols', 'passwordLength'];
+  
 
 for(var i = 0 ; i < passwordLength ; i++);
+(passwordChoice < 8 || passwordChoice > 128);
 
-if (characters ==='abcdefghijklmnopqrstuvwxyz, ABCDEFGHIJKLMNOPQRSTUVWXYZ, 0123456789, @#$%^&*()' && passwordChoice === 'abcdefghijklmnopqrstuvwxyz, ABCDEFGHIJKLMNOPQRSTUVWXYZ, 0123456789, @#$%^&*()') {
-  windows.alert('Password Accepted!');
-  console.log("Password accepted!");
-} else if (characters === 'abcdefghijklmnopqrstuvwxyz') {
-  console.log("lowercase");
- } else if (characters === 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
-  console.log("uppercase");
- } else if (characters === '0123456789') {
-  console.log("numbers");
- } else if (characters === '@#$%^&*()') {
-  console.log("symbols");
- } else {
+if (!passwordChoice) {
+  alert("This needs value");
+} else if {
+  (passwordChoice ==='lowerCase','upperCase', 'numbers', 'symbols');  
+} else if {
+  (passwordChoice < 8 || passwordChoice > 128) {
+    passwordChoice = parseInt(prompt('choose between 8 to 128 characters'));
+  }
   console.log('Does not meet the criteria!');
  }
 }
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-passwordText.addEventListener("click", generatePassword);
+generatePassword()
