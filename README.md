@@ -24,6 +24,9 @@ Added HTML elements, Adding additional functions and variables onto JavaScript a
 
 ## Link to Website
 
-
+https://jdelvalle12.github.io/password-generator/
 
 ## Screenshot
+
+![image](https://user-images.githubusercontent.com/104731082/204432049-e92c72a7-7e31-4545-8add-d64df27bfbfb.png)
+![image](https://user-images.githubusercontent.com/104731082/204432078-9c238b1a-8527-4b0d-9265-22ba19a808fe.png)
