@@ -1,9 +1,7 @@
 // Assignment code here
-
-//Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
-
-//Variables for password
+const generatePassword = () => {
+  
+ //Variables for password
 var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
 var symbols = "!@#$%^&*_-+="; 
@@ -16,21 +14,22 @@ var incSymbols = document.querySelector("#symbols");
 var incLowercase = document.querySelector("#lowercase");
 var incUppercase = document.querySelector("#uppercase");
 
+//Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
+
 // Write password to the #password input
 
 function writePassword() {
   
   var passwordText = document.querySelector("#password");
   var password = generatePassword();
-  
 
   passwordText.value = password;
   
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword) 
-  
+generateBtn.addEventListener("click", writePassword);
 
 //Adding length value and characters 
 var characters = alpha;
@@ -47,13 +46,11 @@ function generatePassword(length, characters) {
    for (var i = 0; i < length; i++) {
     password += characters.charAt(
       Math.floor(Math.random() * characters.length));
-    
-    var button = document.createElement("button");
-    button.textContent = "generate";
   }
   return password;
 }
 
+}
 //Call the function generatePassword to check results
-generatePassword();
+generatePassword()
 
