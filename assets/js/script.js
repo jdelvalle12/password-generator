@@ -29,7 +29,8 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword); 
+generateBtn.addEventListener("click", writePassword) 
+  
 
 //Adding length value and characters 
 var characters = alpha;
@@ -40,19 +41,15 @@ var characters = alpha;
   passwordText.value = generatePassword(length.value, characters);
 
 
-  
-// Prevent default action
-function generatePassword (e) {
-  e.preventDefault;
-  document.querySelector("generate password").textContent = generate; 
-}
-
 //Function to generate password
 function generatePassword(length, characters) {
   var password = " ";
    for (var i = 0; i < length; i++) {
     password += characters.charAt(
       Math.floor(Math.random() * characters.length));
+    
+    var button = document.createElement("button");
+    button.textContent = "generate";
   }
   return password;
 }

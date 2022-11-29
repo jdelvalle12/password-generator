@@ -9,7 +9,7 @@ HTML, CSS, & JavaScript
 
 ## Description
 
-This application allows users to generate a password with a certain criteria to meet the requirements for a secured password. 
+This application allows users to generate a password with a certain criteria to meet for a secured password. 
 
 ## Setup Requirements
 
@@ -18,7 +18,7 @@ Deploy the application by using commands 'git add', 'git commit', & 'git push', 
 
 ## Known Bugs
 
-Added HTML elements, Adding additional functions onto JavaScript along with statements, Added on comments onto JavaScript code,
+Added HTML elements, Adding additional functions and variables onto JavaScript along with statements, Added on comments onto JavaScript code.
 
 
 
