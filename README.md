@@ -9,7 +9,7 @@ HTML, CSS, & JavaScript
 
 ## Description
 
-This application allows users to generate a password with a certain criteria to meet the requirements for a secured password. 
+This application allows users to generate a password with a certain criteria to meet for a secured password. 
 
 ## Setup Requirements
 
@@ -18,12 +18,15 @@ Deploy the application by using commands 'git add', 'git commit', & 'git push', 
 
 ## Known Bugs
 
-Added HTML elements, Adding additional functions onto JavaScript along with statements, Added on comments onto JavaScript code,
+Added HTML elements, Adding additional functions and variables onto JavaScript along with statements, Added on comments onto JavaScript code.
 
 
 
 ## Link to Website
 
-
+https://jdelvalle12.github.io/password-generator/
 
 ## Screenshot
+
+![image](https://user-images.githubusercontent.com/104731082/204432049-e92c72a7-7e31-4545-8add-d64df27bfbfb.png)
+![image](https://user-images.githubusercontent.com/104731082/204432078-9c238b1a-8527-4b0d-9265-22ba19a808fe.png)
