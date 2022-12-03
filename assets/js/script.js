@@ -1,24 +1,17 @@
 // Assignment code here
 
+//Variables for password
+var characters = ("abcdefghijklmnopqrstuvwxyz, ABCDEFGHIJKLMNOPQRSTUVWXYZ, 0123456789, !@#$%^&*_-+=");
+var length = "text.length";
+var password = " ";
+
 //Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-
-//Variables for password
-var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numbers = "0123456789";
-var symbols = "!@#$%^&*_-+="; 
-
-//Update HTML with length, numbers, symbols, lowercase, & uppercase elements
-var passwordText = document.querySelector("#password");
-var length = document.querySelector("#length");
-var incNumbers = document.querySelector("#numbers");
-var incSymbols = document.querySelector("#symbols");
-var incLowercase = document.querySelector("#lowercase");
-var incUppercase = document.querySelector("#uppercase");
+var generate = document.querySelector(".btn");
 
 // Write password to the #password input
 
-function writePassword() {
+function writePassword(password) {
   
   var passwordText = document.querySelector("#password");
   var password = generatePassword();
@@ -31,32 +24,23 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword); 
 
-//Adding length value and characters 
-var characters = alpha;
-  incNumbers.checked ? (characters += numbers) : "";
-  incSymbols.checked ? (characters += symbols) : "";
-  incLowercase.checked ? (characters += lowercase) : "";
-  incUppercase.checked ? (characters += uppercase) : "";
-  passwordText.value = generatePassword(length.value, characters);
-
-
-  
-// Prevent default action
-function generatePassword (e) {
-  e.preventDefault;
-  document.querySelector("generate password").textContent = generate; 
-}
-
 //Function to generate password
-function generatePassword(length, characters) {
+function generatePassword(_characters, _textlength) {
+  alert("select 8-128 characters");
   var password = " ";
    for (var i = 0; i < length; i++) {
-    password += characters.charAt(
-      Math.floor(Math.random() * characters.length));
+
+    password += writePassword() (
+      Math.floor(Math.random() * text.length()));
   }
   return password;
 }
 
+// Prevent default action
+function generatePassword (event) {
+  event.preventDefault();
+  document.querySelector("#generate-password").textContent = generate; 
+}
 //Call the function generatePassword to check results
 generatePassword();
 
