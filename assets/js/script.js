@@ -1,27 +1,17 @@
 // Assignment code here
-const generatePassword = () => {
   
  //Variables for password
-var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numbers = "0123456789";
-var symbols = "!@#$%^&*_-+="; 
-
-//Update HTML with length, numbers, symbols, lowercase, & uppercase elements
-var passwordText = document.querySelector("#password");
-var length = document.querySelector("#length");
-var incNumbers = document.querySelector("#numbers");
-var incSymbols = document.querySelector("#symbols");
-var incLowercase = document.querySelector("#lowercase");
-var incUppercase = document.querySelector("#uppercase");
-
+var characters = ["abcdefghijklmnopqrstuvwxyz","0123456789","!@#$%^&*_-+=", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+var length = "12";
+var password = " ";
 //Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector(".btn");
 
 // Write password to the #password input
 
 function writePassword() {
   
-  var passwordText = document.querySelector("#password");
+  passwordText = document.querySelector("#password")
   var password = generatePassword();
 
   passwordText.value = password;
@@ -31,26 +21,16 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-//Adding length value and characters 
-var characters = alpha;
-  incNumbers.checked ? (characters += numbers) : "";
-  incSymbols.checked ? (characters += symbols) : "";
-  incLowercase.checked ? (characters += lowercase) : "";
-  incUppercase.checked ? (characters += uppercase) : "";
-  passwordText.value = generatePassword(length.value, characters);
-
-
 //Function to generate password
 function generatePassword(length, characters) {
   var password = " ";
-   for (var i = 0; i < length; i++) {
-    password += characters.charAt(
-      Math.floor(Math.random() * characters.length));
-  }
-  return password;
-}
+  password += characters;
+  (Math.floor(Math.random() * length))
+   for (var i = 0; i < length; i++) 
+    return password;    
+  };
 
-}
+
 //Call the function generatePassword to check results
 generatePassword()
 
