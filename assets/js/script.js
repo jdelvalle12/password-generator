@@ -1,18 +1,23 @@
 // Assignment code here
-const generatePassword = () => {
+var generateBtn = document.querySelector("#generate-btn");
+var passwordText = document.querySelector("#password");
   
  //Variables for password
-var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numbers = "0123456789";
-var symbols = "!@#$%^&*_-+="; 
-var length = " ";
+var characters = [
+  "abcdefghijklmnopqrstuvwxyz",
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "0123456789",
+  "!@#$%^&*_-+=",
+];
+
+var length = 12;
+var password = " ";
 
 //Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 
-function writePassword(password) {
+function writePassword() {
   
   var passwordText = document.querySelector("#password");
   var password = generatePassword();
@@ -22,27 +27,25 @@ function writePassword(password) {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", function (event) {
+ event.preventDefault(); 
+ var password = document.querySelector("#password").textContent = " "; 
+});  
 
-//Adding length value and characters 
 
 
 //Function to generate password
-function generatePassword(_characters, _textlength) {
-  alert("select 8-128 characters");
+function generatePassword(characters, length) {
+  alert("select 12 characters");
   var password = " ";
    for (var i = 0; i < length; i++) {
 
-    password += writePassword() (
+    password += writePassword(characters) (
       Math.floor(Math.random() * text.length()));
   }
   return password;
 }
 
-// Prevent default action
-function generatePassword (event) {
-  event.preventDefault();
-  document.querySelector("#generate-password").textContent = generate; 
-}
 //Call the function generatePassword to check results
-generatePassword()
+writePassword();
+generatePassword();
