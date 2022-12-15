@@ -19,7 +19,7 @@ var password = " ";
 
 function writePassword() {
   
-  var passwordText = document.querySelector("#password");
+  var password = document.querySelector("#password");
   var password = generatePassword();
 
   passwordText.value = password;
