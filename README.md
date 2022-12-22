@@ -28,5 +28,5 @@ https://jdelvalle12.github.io/password-generator/
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/104731082/204432049-e92c72a7-7e31-4545-8add-d64df27bfbfb.png)
-![image](https://user-images.githubusercontent.com/104731082/204432078-9c238b1a-8527-4b0d-9265-22ba19a808fe.png)
+![image](https://user-images.githubusercontent.com/104731082/209032615-f9f14f8a-f304-417c-bde0-9443219f72a9.png)
+![image](https://user-images.githubusercontent.com/104731082/209032699-396c859e-7c6c-458c-848e-e0dc7cdbf762.png)
